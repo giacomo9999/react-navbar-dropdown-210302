@@ -19,11 +19,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={styles.navbar}>
-        <Link to="/" className="navbar-logo">
-          <h2>BLAH</h2>
+      <nav className={styles["navbar"]}>
+        <Link to="/" className={styles["navbar-logo"]}>
+          <h2>Blah</h2>
         </Link>
-        <div className="menu-icon" onClick={handleClick}>
+        <div className={styles.menuIcon} onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-hamburger"} />
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
